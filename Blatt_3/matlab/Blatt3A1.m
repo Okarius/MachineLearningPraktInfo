@@ -159,10 +159,10 @@ fpVersicolor = sum(resultSet ==2)+sum(resultVA==2);
 fnVersicolor = sum(resultVE~=2);
 
 %VERGINICA
-tpVerginica = sum(resultVA==3)
-tnVerginica = sum(resultSet ~=3)+sum(resultVE~=3)
-fpVerginica = sum(resultSet ==3)+sum(resultVE==3)
-fnVerginica = sum(resultVA~=3)
+tpVerginica = sum(resultVA==3);
+tnVerginica = sum(resultSet ~=3)+sum(resultVE~=3);
+fpVerginica = sum(resultSet ==3)+sum(resultVE==3);
+fnVerginica = sum(resultVA~=3);
 
 %% f)
 %@Team
