@@ -1,0 +1,31 @@
+Feedback Übung 1				Diegel, Hartmann, Zeitler
+
+
+Aufgabe 1										
+a	b	c	d	e–i	e-ii	e-iii	e-iv	e-v	1f	Σ
+1,0	1,0	1,0	1,0	2,0	1,0	2,0	3,0	2,0	1,5	15,5
+
+Aufgabe 2							
+a	b	c	d	e	f	g	Σ
+2,0	2,0	1,0	1,0	2,0	2,0	2,0	12,0
+
+Aufgabe 3			
+a	b	c	Σ
+3,0	3,0	1,0	7,0
+
+Aufgabe 4					
+b	c	d	e	f	Σ
+1,0	1,0	1,0	2,0	1,0	6,0
+
+
+Gesamt:		40,5
+
+
+Anmerkungen:
+
+3c:	Ungenau. Die Richtung des Zusammenhangs (gleich- oder gegensinnig) wird durchaus
+ 	beschrieben, und zwar durch das Vorzeichen. Nur in Bezug auf die Kausalität kann 
+	keine Richtung angegeben werden, auch nicht durch die Kovarianz. 
+4c:	y-Achse falsch skaliert
+4d:	Hier könnte ein Balkendiagramm oder eine Treppenfunktion verwendet werden, für den
+	diskreten Fall machen Interpolationen keinen Sinn.

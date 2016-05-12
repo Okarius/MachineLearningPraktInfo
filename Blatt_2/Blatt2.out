@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Fragen zur Vorlesung}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Wie lautet der Satz von Bayes? Welche Anwendungen dieses Satzes wurden in der Vorlesung vorgestellt?}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Wie kann man den Satz von Bayes in Bezug auf eine Hypothese interpretieren, die man auf der Basis von ermittelten Daten pr\374fen m\366chte?}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Die \(absolute\) Wahrscheinlichkeit, dass die gegebenen Daten vorliegen, \(auch bezeichnet als evidence\) ist unabh\344ngig von der Hypothese. Im Satz von Bayes ist daher \(Foliensatz 2, Folie 24\) der Nenner bei der Hypothesenbewertung in gewisser Hinsicht qualitativ vernachl\344ssigbar. Wann ist er dennoch wichtig? Fasst kurz zusammen, in welchen F\344llen die evidence vernachl\344ssigt werden kann und in welchen nicht.}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Wie kann man zwischen zwei Hypothesen 1 und 2 entscheiden, wenn keine Daten vorliegen? \(P\(i\), i=1,2 darf dabei als bekannt vorausgesetzt werden.\)}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Warum summieren sich auf Folie 38 \(Foliensatz 2\) die Funktionswerte punktweise \(d. h. f\374r jedes einzelne x\) genau zu 1 und auf Folie 36 nicht? Sind die entsprechenden Integrale \374ber den Wertebereich von x jeweils 1?\(\334berlegt dazu genau, was die Grafiken zeigen.\)}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{Erkl\344re, was die Bayes\220sche Entscheidungsregel besagt. \(Siehe dazu Foliensatz 2, Folie 39 oder Duda S. 42.\)}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{Welches Risiko dr\374ckt das \(conditional\) risk aus? \(Dieses findet sich in Foliensatz 2 auf S. 41; siehe auch Duda S. 43 / 44.\)}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{Wie h\344ngen das sogenannte Bayes risk \(Foliensatz 2, Folie 43 bzw. Duda S. 44\) und das Gesamtrisiko \(Foliensatz 2, Folie 42\) zusammen?}{section.1}% 9
+\BOOKMARK [1][-]{section.2}{Bayes'scher Fisch-Klassifikator}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{Einlesen der Daten}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.2}{Histogramm der Daten}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.3}{Anwendung des Satz von Bayes}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.4}{Plot f\374r die bedingten Funktionen P\(j|x\), j=1,2}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.5}{Anwenden der Bayes'schen Entscheidungregel}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.6}{Wahrscheinlichkeit f\374r das Vorliegen eines Barsches oder Lachses}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.7}{Inwiefern ist das Klassifikationsverfahren abh\344ngig von den Annahmen?}{section.2}% 17
+\BOOKMARK [1][-]{section.3}{Loss-Funktion, Risiko}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Risiko f\374r irrt\374mliche Entscheidung}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Plot des conditional risks f\374r Barsche und Lachse}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Klassifikation anhand des conditional risk}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.4}{Abge\344nderte Loss Funktion}{section.3}% 22

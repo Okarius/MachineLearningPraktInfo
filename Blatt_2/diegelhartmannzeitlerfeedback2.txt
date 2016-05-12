@@ -1,0 +1,56 @@
+Feedback Übung 2				Diegel, Hartmann, Zeitler
+
+
+A1								
+a	b	c	d	e	f	g	h	Σ
+0,5	0,5	0,5	1	2	0,5	0,5	1	6,5
+
+A2							
+c i	c ii	c iii	d	e	f	g	Σ
+2,0	2,0	2,0	2,0	3,0	2,0	1,0	14,0
+
+A3				
+a	b	c	d	Σ
+3,0	3,0	2,0	2,0	10,0
+
+
+Σ Ü2 	30,5
+
+
+Anmerkungen:
+
+
+Anmerkungen von Alex zu A1:
+0.5/1 a)
+Bayer ergibt sich aus der Definition der bedingten Wahrscheinlichkeit.
+Die Formel hatten die auch da stehen. Parameterschätzung und Klassifikation als Anwendung.
+Man brauchte beide Beispiele! (welche ANWENDUNGEN war gefragt...)
+
+0.5/1 b) 
+Interpretation klare Aussage:
+Satz von Bayes verbindet Posterior-Wahrscheinlichkeiten mit a priori-Wahrscheinlichkeiten.
+Wie groß ist Wahrscheinlichkeit dass B (Hypothese) eintritt wenn A (Daten) gegeben.
+---Sinngemäß steht bei uns doch dasselbe?
+Beispiel dazu war wohl erwünscht.
+
+0.5/1 c)
+Wann muss man durch Evidence teilen und wann nicht?
+-> Vergleich von 2 Wahrscheinlichkeiten dann weglassen, 
+wenn nur interessiert was größer ist, dann ist Nenner egal.
+-> Wenn sich nachher alles zu 1 summieren soll, dann muss man teilen
+
+0.5/2 f)
+Was ist Regel und was bedeutet sie/wie kommt man da drauf...
+Man entscheidet sich für die größere a Posterioriwahrscheinlichkeit bei gleichgewichteten Risikofaktoren.
+Ansonsten entscheidet man sich für die Wahrscheinlichkeit, die das geringere Risiko darstellt.
+Wenn man sich danach entscheidet ist das Risiko immer am kleinsten.
+
+0.5/1 g)
+Conditional Risk: 
+Definieren uns ein Loss, das festlegt wie schlimm eine Fehlentscheidung ist.
+Erwartungswert des Risiko (Integration über Posterior der Hypothesen).
+Conditional Risk sagt mir welchen Fehler ich erwarte, wenn ich mich immer für wx entscheide.
+
+
+INFO für Matlab: KEINE FOR-SCHLEIFEN MEHR IM CODE
+Gibt evtl. Abzug.
