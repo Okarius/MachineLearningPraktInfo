@@ -1,10 +1,6 @@
 % Ãœbungsblatt3 
 % Hartman, Zeitschler, Diegel
 %Bayesscher multivariater Klassifikator
-%@TEAM: Wir machen solche BlÃ¶cke fÃ¼r den Code, dann kÃ¶nnen wir uns besser
-% orientieren. Einzelne Sectionen sind auch einzeln ausfÃ¼hrbar,sodass wir
-% nicht immer alle Plots generieren lassen mÃ¼ssen zum Beispiel.
-
 
 %%
 %a) Trainings und Testdaten einlesen
@@ -72,9 +68,6 @@ var_versicolor = var(traindata_versicolor);
 var_verginica= var(traindata_verginica);
 %%
 %d) likelihoods p(x|w) & Bayes
-% likelihood_setosa = @(X) normpdf(X,repmat(mean_setosa,length(X),1),repmat(var_setosa,length(X),1));
-% likelihood_versicolor = @(X) normpdf(X,repmat(mean_versicolor,length(X),1),repmat(var_versicolor,length(X),1));
-% likelihood_verginica = @(X) normpdf(X,repmat(mean_verginica,length(X),1),repmat(var_verginica,length(X),1));
 
 %Kenndaten stochastisch unabhï¿½ngig -> kovarianzmatrix hat die einzelnen
 %varianzen auf der Diagonalen, sonst alle Eintrï¿½ge 0
@@ -86,21 +79,6 @@ likelihood_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa);
 likelihood_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor);
 likelihood_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica);
 
-%plots fï¿½r likelihoof und bayes sind eigentlich gar nicht mï¿½glich, da wir
-%ja 4 kenngrï¿½ï¿½en reinwerfen mï¿½ssen
-
-% figure(4)
-% subplot(3,1,1)
-% fplot(likelihood_setosa,[0 10])
-% title('Likelihoods-Setosa')
-% subplot(3,1,2)
-% fplot(likelihood_versicolor,[0 10])
-% title('Likelihoods-Versicolor')
-% subplot(3,1,3)
-% fplot(likelihood_verginica,[0 10])
-% title('Likelihoods-Verginica')
-% 
-% print(figure(4), '-djpeg', strcat('../plots/LikelihoodsAll.jpg'));
 
 %PRIORIs: alle sind gleichwahrscheinlich
 priori = 1/3;
@@ -108,16 +86,6 @@ bayes_setosa = @(X) likelihood_setosa(X) * priori;
 bayes_versicolor = @(X) likelihood_versicolor(X) * priori;
 bayes_verginica = @(X) likelihood_verginica(X) * priori;
 
-% %Testplots
-% figure(5)
-% hold on
-% fplot(bayes_setosa,[0 10],'r')
-% fplot(bayes_versicolor,[0 10],'g')
-% fplot(bayes_verginica,[0 10],'b')
-% hold off
-% print(figure(5), '-djpeg', strcat('../plots/BayesAll.jpg'));
-
-%%
 %KLASSIFIZIERE die Schwertlilienarten in RESULTVEKTOR
 %1=Setosa, 2=Versicolor, 3=Verginica
 
@@ -165,9 +133,7 @@ fpVerginica = sum(resultSet ==3)+sum(resultVE==3);
 fnVerginica = sum(resultVA~=3);
 
 %% f)
-%@Team
-%Hier plotte ich immer die Trainingsdaten k.A. ob die gemeint sind. Denke
-%schon
+%Wir tragen hier die Kenngrößen der Testdaten auf
 figure(6);
 subplot(2,2,1);
 hold on;
@@ -183,7 +149,7 @@ hold on;
 h1=scatter(traindata_setosa(:,3),traindata_verginica(:,1),'r');
 h2=scatter(traindata_verginica(:,3),traindata_verginica(:,1),'g');
 h3=scatter(traindata_versicolor(:,3),traindata_versicolor(:,1),'b');
-title('petale LÃ¤nge vs sepale LÃ¤nge');
+title('petale Laenge vs sepale Laenge');
 legend([h1,h2,h3],'Setosa', 'Veginica','Versicolor');
 hold off;
 
@@ -205,28 +171,19 @@ title('sepale LÃ¤nge vs sepale Breite');
 legend([h1,h2,h3],'Setosa', 'Veginica','Versicolor');
 hold off;
 
-%1: Setosa kann man mit sehr gut erkennen nur wenn man sepale LÃ¤nge vs Sepale
-%Breite plottet gibt es probleme sie zu unterscheiden.
+%1: Setosa kann man mit den einzelnen Kenngrößen sehr gut abgrenzen, nur wenn man sepale LÃ¤nge vs Sepale
+%Breite allein betrachtet, gibt es probleme sie abzugrenzen.
 %2: Sepale LÃ¤nge vs Sepale Breite scheint sehr durcheinander zu sein, eine
-%erkennung ist nur bei einer kleinen bzw groÃŸen sepalen breite eindeutig
-%mÃ¶glich.  @Team warum?
-%3: Auffallend ist das man immer einige wenige Ã¼berschneidungen zwischen
-%Veginica und Versicolor hat, eine eindeutige unterscheidung ausschlieÃŸlich
-%an hand der sepalen maÃŸe wird wohl schwer fallen.
+%klare Abgrenzung der Arten ist über diese Kenngrößen allein nicht möglich
+%3: Auffallend ist, dass man immer einige Ã¼berschneidungen zwischen
+%Veginica und Versicolor hat, eine eindeutige Unterscheidung ausschlieÃŸlich
+%anhand von einzelnen Kenngrößen würde wohl schwer fallen.
 %4: Man kann hoffen das diese wenigen Ã¼berschneidungen immer andere
 %Pflanzen sind, dann kÃ¶nnte es mÃ¶glich sein mit hilfe der Ã¼brigen
 %Plots ein eindeutiges Ergebnis zu erhalten
 %
-%
-%
 
-
-
-%@TEAM: eigentlich ist die g) genau das gleiche wie die andere
-%Klassifikation, nur muss man entsprechend die richtige Kovarianzmatrix
-%aufstellen
-
-%% g)
+%% g) Kenngrößen sind nicht stochastisch unabhängig
 
 %Cov. aus den Trainingsdaten bestimmen, Kenndaten sind stoch. abhï¿½ngig
 cov_setosa = cov(traindata_setosa);
@@ -244,16 +201,7 @@ bayes_mvn_setosa = @(X) likelihood_mvn_setosa(X) * priori;
 bayes_mvn_versicolor = @(X) likelihood_mvn_versicolor(X) * priori;
 bayes_mvn_verginica = @(X) likelihood_mvn_verginica(X) * priori;
 
-%plot der likelihoods
-figure(7);
-subplot(3,1,1);
-plot(likelihood_mvn_setosa(testdata_setosa), 'r');
-subplot(3,1,2);
-plot(likelihood_mvn_versicolor(testdata_versicolor), 'g');
-subplot(3,1,3);
-plot(likelihood_mvn_verginica(testdata_verginica), 'b');
-
-%KLASSIFIZIERE die Schwertlilienarten in RESULTVEKTOR
+%KLASSIFIZIERE die Schwertlilienarten erneut in RESULTVEKTOR
 %1=Setosa, 2=Versicolor, 3=Verginica
 
 %SETOSA
@@ -298,12 +246,16 @@ tn_mvn_Verginica = sum(result_mvn_Set ~=3)+sum(result_mvn_VE~=3);
 fp_mvn_Verginica = sum(result_mvn_Set ==3)+sum(result_mvn_VE==3);
 fn_mvn_Verginica = sum(result_mvn_VA~=3);
 
-%Nach der ï¿½nderung:
+%Änderung des Ergebnisses:
 %Jetzt werden alle Testdaten korrekt klassifiziert.
 
-%@TEAM:
+%Die Annahme, dass die einzelnen Kenngrößen stochastisch unabhängig waren
+%scheint falsch gewesen zu sein.
+%Mit der Annahme, dass sie doch abhängig waren erhalten wir deshalb bessere
+%Klassifizierungsergebnisse
+
 %Mï¿½glicher plot:
-%Differenzen fï¿½r tp,tn,fp und fn?
+%Differenzen fï¿½r tp,tn,fp und fn visualisieren
 
 figure(8)
 subplot(3,1,1);

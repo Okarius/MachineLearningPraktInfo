@@ -1,34 +1,40 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.21)  12 MAY 2016 19:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.1)  12 MAY 2016 20:59
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **Blatt3.tex
-(./Blatt3.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 79 languages loaded.
-(/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
-Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
+(C:\Users\Josh\Dropbox\Uni\SS_2016\MachineLearningPraktInfo\Blatt_3\Blatt3.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX\tex\latex\koma-script\scrartcl.cls"
+Document Class: scrartcl 2015/07/02 v3.18 KOMA-Script document class (article)
+("C:\Program Files\MiKTeX\tex\latex\koma-script\scrkbase.sty"
+Package: scrkbase 2015/07/02 v3.18 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 
-(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
+("C:\Program Files\MiKTeX\tex\latex\koma-script\scrbase.sty"
+Package: scrbase 2015/07/02 v3.18 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
-
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+("C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
+("C:\Program Files\MiKTeX\tex\latex\koma-script\scrlfile.sty"
+Package: scrlfile 2015/07/02 v3.18 KOMA-Script package (loading files)
 
-Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
+Package scrlfile, 2015/07/02 v3.18 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
+))) ("C:\Program Files\MiKTeX\tex\latex\koma-script\tocbasic.sty"
+Package: tocbasic 2015/07/02 v3.18 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
@@ -40,17 +46,17 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 125.
 Class scrartcl Info: File `scrsize11pt.clo' used instead of
-(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 203
-3.
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 202
+7.
 
-(/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
-t)
+("C:\Program Files\MiKTeX\tex\latex\koma-script\scrsize11pt.clo"
+File: scrsize11pt.clo 2015/07/02 v3.18 KOMA-Script font size class option (11pt
 )
-(/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
+)
+("C:\Program Files\MiKTeX\tex\latex\koma-script\typearea.sty"
+Package: typearea 2015/07/02 v3.18 KOMA-Script package (type area)
 
-Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
+Package typearea, 2015/07/02 v3.18 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -76,7 +82,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1509.
+(typearea)              on input line 1506.
 )
 \c@part=\count80
 \c@section=\count81
@@ -84,32 +90,29 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count83
 \c@paragraph=\count84
 \c@subparagraph=\count85
-LaTeX Info: Redefining \textsubscript on input line 3906.
 \abovecaptionskip=\skip46
 \belowcaptionskip=\skip47
 \c@pti@nb@sid@b@x=\box26
 \c@figure=\count86
 \c@table=\count87
 \bibindent=\dimen102
-) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+) ("C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(/usr/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+("C:\Program Files\MiKTeX\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
+("C:\Program Files\MiKTeX\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -230,10 +233,6 @@ File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -241,10 +240,6 @@ File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+200C (decimal 8204)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
@@ -263,12 +258,10 @@ File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
+("C:\Program Files\MiKTeX\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -286,14 +279,6 @@ File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -304,8 +289,8 @@ File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+("C:\Program Files\MiKTeX\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -328,7 +313,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texmf-dist/tex/latex/bussproofs/bussproofs.sty
+("C:\Program Files\MiKTeX\tex\latex\bussproofs\bussproofs.sty"
 Proof Tree (bussproofs) style macros. Version 1.1.
 \theLevel=\count88
 \myMaxLevel=\count89
@@ -354,34 +339,34 @@ Proof Tree (bussproofs) style macros. Version 1.1.
 \htRRRbox=\dimen116
 \htAbox=\dimen117
 \htCbox=\dimen118
-) (/usr/share/texmf-dist/tex/latex/koma-script/scrpage2.sty
-Package: scrpage2 2015/10/03 v3.19a KOMA-Script package (page head and foot)
+) ("C:\Program Files\MiKTeX\tex\latex\koma-script\scrpage2.sty"
+Package: scrpage2 2015/07/02 v3.18 KOMA-Script package (page head and foot)
 LaTeX Info: Redefining \pagemark on input line 174.
 )
-(/usr/share/texmf-dist/tex/latex/rotating/rotating.sty
+("C:\Program Files\MiKTeX\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files\MiKTeX\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files\MiKTeX\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -389,8 +374,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
 )
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+("C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count91
 \rotFPtop=\skip48
@@ -398,7 +383,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box33
 \rot@mess@toks=\toks17
 )
-(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+("C:\Program Files\MiKTeX\tex\latex\listings\listings.sty"
 \lst@mode=\count92
 \lst@gtempboxa=\box34
 \lst@token=\toks18
@@ -412,35 +397,35 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \lst@lineno=\count97
 \lst@maxwidth=\dimen124
 
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+("C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count98
 \lst@skipnumbers=\count99
 \lst@framebox=\box35
 )
-(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+("C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+("C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen125
 ))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen126
 )
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count100
@@ -481,23 +466,23 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -528,7 +513,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -536,27 +521,27 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+("C:\Program Files\MiKTeX\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen134
 \Hy@linkcounter=\count112
 \Hy@pagecounter=\count113
 
-(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count114
 
-(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files\MiKTeX\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -568,7 +553,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count115
 
-(/usr/share/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files\MiKTeX\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -593,20 +578,19 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count120
 \c@bookmark@seq@number=\count121
 
-(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip53
-) (./Blatt3.aux)
-\openout1 = `Blatt3.aux'.
-
+)
+(C:\Users\Josh\Dropbox\Uni\SS_2016\MachineLearningPraktInfo\Blatt_3\Blatt3.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
@@ -621,8 +605,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
-
-(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Program Files\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen138
@@ -635,29 +618,14 @@ LaTeX Font Info:    ... okay on input line 19.
 \MPnumerator=\count126
 \makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks25
-) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 \c@lstlisting=\count128
 \AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring OFF on input line 19.
-
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+ ("C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count129
@@ -665,102 +633,117 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
- (./Blatt3.out) (./Blatt3.out)
-\@outlinefile=\write3
-\openout3 = `Blatt3.out'.
 
+(C:\Users\Josh\Dropbox\Uni\SS_2016\MachineLearningPraktInfo\Blatt_3\Blatt3.out)
+(C:\Users\Josh\Dropbox\Uni\SS_2016\MachineLearningPraktInfo\Blatt_3\Blatt3.out)
+\@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for U+msa on input line 21.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<plots/trainSetosa.jpg, id=4, 1204.5pt x 903.375pt>
+<plots/trainSetosa.jpg, id=3, 1204.5pt x 903.375pt>
 File: plots/trainSetosa.jpg Graphic file (type jpg)
 
 <use plots/trainSetosa.jpg>
 Package pdftex.def Info: plots/trainSetosa.jpg used on input line 25.
 (pdftex.def)             Requested size: 125.47794pt x 94.10593pt.
 
-<plots/trainVersicolor.jpg, id=5, 1204.5pt x 903.375pt>
+<plots/trainVersicolor.jpg, id=4, 1204.5pt x 903.375pt>
 File: plots/trainVersicolor.jpg Graphic file (type jpg)
 
 <use plots/trainVersicolor.jpg>
 Package pdftex.def Info: plots/trainVersicolor.jpg used on input line 26.
 (pdftex.def)             Requested size: 125.47794pt x 94.10593pt.
 
-<plots/trainVerginica.jpg, id=6, 1204.5pt x 903.375pt>
+<plots/trainVerginica.jpg, id=5, 1204.5pt x 903.375pt>
 File: plots/trainVerginica.jpg Graphic file (type jpg)
 
 <use plots/trainVerginica.jpg>
 Package pdftex.def Info: plots/trainVerginica.jpg used on input line 27.
 (pdftex.def)             Requested size: 125.47794pt x 94.10593pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/trainSetosa.jpg> <
-./plots/trainVersicolor.jpg> <./plots/trainVerginica.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 44--47
+{C:/Users/Josh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Jos
+h/Dropbox/Uni/SS_2016/MachineLearningPraktInfo/Blatt_3/plots/trainSetosa.jpg> <
+C:/Users/Josh/Dropbox/Uni/SS_2016/MachineLearningPraktInfo/Blatt_3/plots/trainV
+ersicolor.jpg> <C:/Users/Josh/Dropbox/Uni/SS_2016/MachineLearningPraktInfo/Blat
+t_3/plots/trainVerginica.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
 
-<plots/plotF.jpg, id=17, 887.315pt x 665.48625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
+
+ []
+
+<plots/plotF.jpg, id=16, 1927.2pt x 966.61125pt>
 File: plots/plotF.jpg Graphic file (type jpg)
  <use plots/plotF.jpg>
-Package pdftex.def Info: plots/plotF.jpg used on input line 66.
-(pdftex.def)             Requested size: 376.42744pt x 282.31511pt.
+Package pdftex.def Info: plots/plotF.jpg used on input line 68.
+(pdftex.def)             Requested size: 460.08365pt x 230.7525pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Overfull \hbox (41.8281pt too wide) in paragraph at lines 68--69
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-[2] <plots/diffsAll.jpg, id=27, 2135.98pt x 1056.94875pt>
+[2 <C:/Users/Josh/Dropbox/Uni/SS_2016/MachineLearningPraktInfo/Blatt_3/plots/pl
+otF.jpg>] <plots/diffsAll.jpg, id=27, 1204.5pt x 903.375pt>
 File: plots/diffsAll.jpg Graphic file (type jpg)
 
 <use plots/diffsAll.jpg>
-Package pdftex.def Info: plots/diffsAll.jpg used on input line 82.
-(pdftex.def)             Requested size: 376.42744pt x 186.25902pt.
+Package pdftex.def Info: plots/diffsAll.jpg used on input line 85.
+(pdftex.def)             Requested size: 376.42744pt x 282.31778pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-[3 <./plots/plotF.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
- [4 <./plots/diffsAll.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
- (./Blatt3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+[3 <C:/Users/Josh/Dropbox/Uni/SS_2016/MachineLearningPraktInfo/Blatt_3/plots/di
+ffsAll.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+
+(C:\Users\Josh\Dropbox\Uni\SS_2016\MachineLearningPraktInfo\Blatt_3\Blatt3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `Blatt3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 9435 strings out of 493054
- 140159 string characters out of 6140585
- 297405 words of memory out of 5000000
- 12834 multiletter control sequences out of 15000+600000
- 12721 words of font info for 49 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 43i,10n,46p,461b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ssbx10.pfb>
-Output written on Blatt3.pdf (4 pages, 462752 bytes).
+ 9289 strings out of 493921
+ 138318 string characters out of 3148890
+ 289285 words of memory out of 3000000
+ 12468 multiletter control sequences out of 15000+200000
+ 12721 words of font info for 49 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 43i,11n,46p,463b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb>
+Output written on Blatt3.pdf (4 pages, 448081 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
