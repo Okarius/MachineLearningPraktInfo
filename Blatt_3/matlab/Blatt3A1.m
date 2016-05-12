@@ -82,9 +82,9 @@ cov_setosa = diag(var_setosa);
 cov_versicolor = diag(var_versicolor);
 cov_verginica= diag(var_verginica);
 
-likelihood_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa)
-likelihood_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor)
-likelihood_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica)
+likelihood_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa);
+likelihood_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor);
+likelihood_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica);
 
 %plots für likelihoof und bayes sind eigentlich gar nicht möglich, da wir
 %ja 4 kenngrößen reinwerfen müssen
@@ -236,9 +236,9 @@ cov_verginica= cov(traindata_verginica);
 %mittelwerte entsprechen den oben bestimmten mittelwerten
 
 %likelihoods mit mvnpdf bestimmen
-likelihood_mvn_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa)
-likelihood_mvn_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor)
-likelihood_mvn_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica)
+likelihood_mvn_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa);
+likelihood_mvn_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor);
+likelihood_mvn_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica);
 
 bayes_mvn_setosa = @(X) likelihood_mvn_setosa(X) * priori;
 bayes_mvn_versicolor = @(X) likelihood_mvn_versicolor(X) * priori;
@@ -298,11 +298,37 @@ tn_mvn_Verginica = sum(result_mvn_Set ~=3)+sum(result_mvn_VE~=3);
 fp_mvn_Verginica = sum(result_mvn_Set ==3)+sum(result_mvn_VE==3);
 fn_mvn_Verginica = sum(result_mvn_VA~=3);
 
-%Änderung:
+%Nach der Änderung:
 %Jetzt werden alle Testdaten korrekt klassifiziert.
 
 %@TEAM:
 %Möglicher plot:
 %Differenzen für tp,tn,fp und fn?
-%??
 
+figure(8)
+subplot(3,1,1);
+diff_tp_Setosa = tp_mvn_Setosa  - tpSetosa;
+diff_tn_Setosa = tn_mvn_Setosa  - tnSetosa;
+diff_fp_Setosa = fp_mvn_Setosa  - fpSetosa;
+diff_fn_Setosa = fn_mvn_Setosa  - fnSetosa;
+bar([diff_tp_Setosa diff_tn_Setosa diff_fp_Setosa diff_fn_Setosa]); 
+title('Änderung der Klassifizierungen für Setosa');
+set(gca,'XTickLabel',{'True Positive','True Negative','False Positive','False Negative'});
+
+subplot(3,1,2);
+diff_tp_Versicolor = tp_mvn_Versicolor  - tpVersicolor;
+diff_tn_Versicolor = tn_mvn_Versicolor  - tnVersicolor;
+diff_fp_Versicolor = fp_mvn_Versicolor  - fpVersicolor;
+diff_fn_Versicolor = fn_mvn_Versicolor  - fnVersicolor;
+bar([diff_tp_Versicolor diff_tn_Versicolor diff_fp_Versicolor diff_fn_Versicolor]);
+title('Änderung der Klassifizierungen für Versicolor');
+set(gca,'XTickLabel',{'True Positive','True Negative','False Positive','False Negative'});
+
+subplot(3,1,3);
+diff_tp_Verginica = tp_mvn_Verginica  - tpVerginica;
+diff_tn_Verginica = tn_mvn_Verginica  - tnVerginica;
+diff_fp_Verginica = fp_mvn_Verginica  - fpVerginica;
+diff_fn_Verginica = fn_mvn_Verginica  - fnVerginica;
+bar([diff_tp_Verginica diff_tn_Verginica diff_fp_Verginica diff_fn_Verginica]) ;
+title('Änderung der Klassifizierungen für Verginica');
+set(gca,'XTickLabel',{'True Positive','True Negative','False Positive','False Negative'});
