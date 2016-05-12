@@ -76,8 +76,8 @@ var_verginica= var(traindata_verginica);
 % likelihood_versicolor = @(X) normpdf(X,repmat(mean_versicolor,length(X),1),repmat(var_versicolor,length(X),1));
 % likelihood_verginica = @(X) normpdf(X,repmat(mean_verginica,length(X),1),repmat(var_verginica,length(X),1));
 
-%Kenndaten stochastisch unabhängig -> kovarianzmatrix hat die einzelnen
-%varianzen auf der Diagonalen, sonst alle Einträge 0
+%Kenndaten stochastisch unabhï¿½ngig -> kovarianzmatrix hat die einzelnen
+%varianzen auf der Diagonalen, sonst alle Eintrï¿½ge 0
 cov_setosa = diag(var_setosa);
 cov_versicolor = diag(var_versicolor);
 cov_verginica= diag(var_verginica);
@@ -86,8 +86,8 @@ likelihood_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa);
 likelihood_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor);
 likelihood_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica);
 
-%plots für likelihoof und bayes sind eigentlich gar nicht möglich, da wir
-%ja 4 kenngrößen reinwerfen müssen
+%plots fï¿½r likelihoof und bayes sind eigentlich gar nicht mï¿½glich, da wir
+%ja 4 kenngrï¿½ï¿½en reinwerfen mï¿½ssen
 
 % figure(4)
 % subplot(3,1,1)
@@ -159,10 +159,10 @@ fpVersicolor = sum(resultSet ==2)+sum(resultVA==2);
 fnVersicolor = sum(resultVE~=2);
 
 %VERGINICA
-tpVerginica = sum(resultVA==3);
-tnVerginica = sum(resultSet ~=3)+sum(resultVE~=3);
-fpVerginica = sum(resultSet ==3)+sum(resultVE==3);
-fnVerginica = sum(resultVA~=3);
+tpVerginica = sum(resultVA==3)
+tnVerginica = sum(resultSet ~=3)+sum(resultVE~=3)
+fpVerginica = sum(resultSet ==3)+sum(resultVE==3)
+fnVerginica = sum(resultVA~=3)
 
 %% f)
 %@Team
@@ -228,7 +228,7 @@ hold off;
 
 %% g)
 
-%Cov. aus den Trainingsdaten bestimmen, Kenndaten sind stoch. abhängig
+%Cov. aus den Trainingsdaten bestimmen, Kenndaten sind stoch. abhï¿½ngig
 cov_setosa = cov(traindata_setosa);
 cov_versicolor = cov(traindata_versicolor);
 cov_verginica= cov(traindata_verginica);
@@ -298,12 +298,12 @@ tn_mvn_Verginica = sum(result_mvn_Set ~=3)+sum(result_mvn_VE~=3);
 fp_mvn_Verginica = sum(result_mvn_Set ==3)+sum(result_mvn_VE==3);
 fn_mvn_Verginica = sum(result_mvn_VA~=3);
 
-%Nach der Änderung:
+%Nach der ï¿½nderung:
 %Jetzt werden alle Testdaten korrekt klassifiziert.
 
 %@TEAM:
-%Möglicher plot:
-%Differenzen für tp,tn,fp und fn?
+%Mï¿½glicher plot:
+%Differenzen fï¿½r tp,tn,fp und fn?
 
 figure(8)
 subplot(3,1,1);
@@ -312,7 +312,7 @@ diff_tn_Setosa = tn_mvn_Setosa  - tnSetosa;
 diff_fp_Setosa = fp_mvn_Setosa  - fpSetosa;
 diff_fn_Setosa = fn_mvn_Setosa  - fnSetosa;
 bar([diff_tp_Setosa diff_tn_Setosa diff_fp_Setosa diff_fn_Setosa]); 
-title('Änderung der Klassifizierungen für Setosa');
+title('ï¿½nderung der Klassifizierungen fï¿½r Setosa');
 set(gca,'XTickLabel',{'True Positive','True Negative','False Positive','False Negative'});
 
 subplot(3,1,2);
@@ -321,7 +321,7 @@ diff_tn_Versicolor = tn_mvn_Versicolor  - tnVersicolor;
 diff_fp_Versicolor = fp_mvn_Versicolor  - fpVersicolor;
 diff_fn_Versicolor = fn_mvn_Versicolor  - fnVersicolor;
 bar([diff_tp_Versicolor diff_tn_Versicolor diff_fp_Versicolor diff_fn_Versicolor]);
-title('Änderung der Klassifizierungen für Versicolor');
+title('ï¿½nderung der Klassifizierungen fï¿½r Versicolor');
 set(gca,'XTickLabel',{'True Positive','True Negative','False Positive','False Negative'});
 
 subplot(3,1,3);
@@ -330,5 +330,5 @@ diff_tn_Verginica = tn_mvn_Verginica  - tnVerginica;
 diff_fp_Verginica = fp_mvn_Verginica  - fpVerginica;
 diff_fn_Verginica = fn_mvn_Verginica  - fnVerginica;
 bar([diff_tp_Verginica diff_tn_Verginica diff_fp_Verginica diff_fn_Verginica]) ;
-title('Änderung der Klassifizierungen für Verginica');
+title('ï¿½nderung der Klassifizierungen fï¿½r Verginica');
 set(gca,'XTickLabel',{'True Positive','True Negative','False Positive','False Negative'});

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.21)  11 MAY 2016 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.21)  12 MAY 2016 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -678,57 +678,56 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<plots/trainSetosa.jpg, id=4, 652.4375pt x 1499.6025pt>
+<plots/trainSetosa.jpg, id=4, 1204.5pt x 903.375pt>
 File: plots/trainSetosa.jpg Graphic file (type jpg)
 
 <use plots/trainSetosa.jpg>
 Package pdftex.def Info: plots/trainSetosa.jpg used on input line 25.
-(pdftex.def)             Requested size: 125.47794pt x 288.4055pt.
+(pdftex.def)             Requested size: 125.47794pt x 94.10593pt.
 
-<plots/trainVersicolor.jpg, id=5, 652.4375pt x 1499.6025pt>
+<plots/trainVersicolor.jpg, id=5, 1204.5pt x 903.375pt>
 File: plots/trainVersicolor.jpg Graphic file (type jpg)
 
 <use plots/trainVersicolor.jpg>
 Package pdftex.def Info: plots/trainVersicolor.jpg used on input line 26.
-(pdftex.def)             Requested size: 125.47794pt x 288.4055pt.
+(pdftex.def)             Requested size: 125.47794pt x 94.10593pt.
 
-<plots/trainVerginica.jpg, id=6, 652.4375pt x 1499.6025pt>
+<plots/trainVerginica.jpg, id=6, 1204.5pt x 903.375pt>
 File: plots/trainVerginica.jpg Graphic file (type jpg)
 
 <use plots/trainVerginica.jpg>
 Package pdftex.def Info: plots/trainVerginica.jpg used on input line 27.
-(pdftex.def)             Requested size: 125.47794pt x 288.4055pt.
- [1
+(pdftex.def)             Requested size: 125.47794pt x 94.10593pt.
 
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/trainSetosa.jpg> <
-./plots/trainVersicolor.jpg> <./plots/trainVerginica.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
+[1
 
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/trainSetosa.jpg> <
+./plots/trainVersicolor.jpg> <./plots/trainVerginica.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-<plots/LikelihoodsAll.jpg, id=17, 1310.8975pt x 1499.6025pt>
+<plots/LikelihoodsAll.jpg, id=17, 1204.5pt x 903.375pt>
 File: plots/LikelihoodsAll.jpg Graphic file (type jpg)
 
 <use plots/LikelihoodsAll.jpg>
 Package pdftex.def Info: plots/LikelihoodsAll.jpg used on input line 49.
-(pdftex.def)             Requested size: 188.21371pt x 215.29732pt.
+(pdftex.def)             Requested size: 188.21371pt x 141.152pt.
 
-<plots/BayesAll.jpg, id=18, 872.25874pt x 1499.6025pt>
+<plots/BayesAll.jpg, id=18, 1204.5pt x 903.375pt>
 File: plots/BayesAll.jpg Graphic file (type jpg)
-
-<use plots/BayesAll.jpg>
+ <use plots/BayesAll.jpg>
 Package pdftex.def Info: plots/BayesAll.jpg used on input line 50.
-(pdftex.def)             Requested size: 188.21371pt x 323.57524pt.
- [2] <plots/plotF.jpg, id=26, 887.315pt x 665.48625pt>
-File: plots/plotF.jpg Graphic file (type jpg)
+(pdftex.def)             Requested size: 188.21371pt x 141.152pt.
 
-<use plots/plotF.jpg>
+<plots/plotF.jpg, id=19, 887.315pt x 665.48625pt>
+File: plots/plotF.jpg Graphic file (type jpg)
+ <use plots/plotF.jpg>
 Package pdftex.def Info: plots/plotF.jpg used on input line 66.
 (pdftex.def)             Requested size: 376.42744pt x 282.31511pt.
 
@@ -736,9 +735,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[3 <./plots/LikelihoodsAll.jpg> <./plots/BayesAll.jpg>]
+[2 <./plots/LikelihoodsAll.jpg> <./plots/BayesAll.jpg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [4 <./plots/plotF.jpg>]
+ [3 <./plots/plotF.jpg>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 (./Blatt3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
@@ -748,9 +747,9 @@ Package rerunfilecheck Info: File `Blatt3.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 9437 strings out of 493054
- 140264 string characters out of 6140585
- 296405 words of memory out of 5000000
+ 9436 strings out of 493054
+ 140258 string characters out of 6140585
+ 297405 words of memory out of 5000000
  12837 multiletter control sequences out of 15000+600000
  12721 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -760,10 +759,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssbx10.pfb>
-Output written on Blatt3.pdf (4 pages, 485943 bytes).
+Output written on Blatt3.pdf (3 pages, 440181 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
