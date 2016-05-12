@@ -207,7 +207,7 @@ hold off;
 
 %1: Setosa kann man mit sehr gut erkennen nur wenn man sepale Länge vs Sepale
 %Breite plottet gibt es probleme sie zu unterscheiden.
-%2: Sepale Länge vs Sepale Breite scheint sehr durcheinander zu sein, eine
+%2: Sepale Länge vs Sepale Breite scheint sehr durcheinander zu sein, einer
 %erkennung ist nur bei einer kleinen bzw großen sepalen breite eindeutig
 %möglich.  @Team warum?
 %3: Auffallend ist das man immer einige wenige überschneidungen zwischen
