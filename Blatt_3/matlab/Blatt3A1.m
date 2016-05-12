@@ -75,6 +75,7 @@ var_verginica= var(traindata_verginica);
 likelihood_setosa = @(X) normpdf(X,repmat(mean_setosa,length(X),1),repmat(var_setosa,length(X),1));
 likelihood_versicolor = @(X) normpdf(X,repmat(mean_versicolor,length(X),1),repmat(var_versicolor,length(X),1));
 likelihood_verginica = @(X) normpdf(X,repmat(mean_verginica,length(X),1),repmat(var_verginica,length(X),1));
+
 figure(4)
 subplot(3,1,1)
 fplot(likelihood_setosa,[0 10])
@@ -145,13 +146,10 @@ fpVersicolor = sum(resultSet ==2)+sum(resultVA==2);
 fnVersicolor = sum(resultVE~=2);
 
 %VERGINICA
-tpVerginica = sum(resultVA==3)
-tnVerginica = sum(resultSet ~=3)+sum(resultVE~=3)
-fpVerginica = sum(resultSet ==3)+sum(resultVE==3)
-fnVerginica = sum(resultVA~=3)
-
-
-
+tpVerginica = sum(resultVA==3);
+tnVerginica = sum(resultSet ~=3)+sum(resultVE~=3);
+fpVerginica = sum(resultSet ==3)+sum(resultVE==3);
+fnVerginica = sum(resultVA~=3);
 
 %% f)
 %@Team
@@ -176,7 +174,6 @@ title('petale LÃ¤nge vs sepale LÃ¤nge');
 legend([h1,h2,h3],'Setosa', 'Veginica','Versicolor');
 hold off;
 
-
 subplot(2,2,3);
 hold on;
 h1=scatter(traindata_setosa(:,3),traindata_verginica(:,2),'r');
@@ -185,8 +182,6 @@ h3=scatter(traindata_versicolor(:,3),traindata_versicolor(:,2),'b');
 title('petale LÃ¤nge vs sepale Breite');
 legend([h1,h2,h3],'Setosa', 'Veginica','Versicolor');
 hold off;
-
-
 
 subplot(2,2,4);
 hold on;
@@ -211,4 +206,88 @@ hold off;
 %
 %
 %
+
+
+
+%@TEAM: eigentlich ist die g) genau das gleiche wie die andere
+%Klassifikation, nur muss man entsprechend die richtige Kovarianzmatrix
+%aufstellen
+
+%% g)
+
+%Cov. aus den Trainingsdaten bestimmen, Kenndaten sind stoch. abhängig
+cov_setosa = cov(traindata_setosa);
+cov_versicolor = cov(traindata_versicolor);
+cov_verginica= cov(traindata_verginica);
+
+%Kenndaten stochastisch unabhängig -> kovarianzmatrix hat die einzelnen
+%varianzen auf der Diagonalen, sonst alle Einträge 0
+% cov_setosa = diag(var_setosa);
+% cov_versicolor = diag(var_versicolor);
+% cov_verginica= diag(var_verginica);
+
+%mittelwerte entsprechen den oben bestimmten mittelwerten
+
+%likelihoods mit mvnpdf bestimmen
+likelihood_mvn_setosa = @(X) mvnpdf(X,mean_setosa,cov_setosa)
+likelihood_mvn_versicolor = @(X) mvnpdf(X,mean_versicolor,cov_versicolor)
+likelihood_mvn_verginica = @(X) mvnpdf(X,mean_verginica,cov_verginica)
+
+bayes_mvn_setosa = @(X) likelihood_mvn_setosa(X) * priori;
+bayes_mvn_versicolor = @(X) likelihood_mvn_versicolor(X) * priori;
+bayes_mvn_verginica = @(X) likelihood_mvn_verginica(X) * priori;
+
+%plot der likelihoods
+figure(7);
+subplot(3,1,1);
+plot(likelihood_mvn_setosa(testdata_setosa), 'r');
+subplot(3,1,2);
+plot(likelihood_mvn_versicolor(testdata_versicolor), 'g');
+subplot(3,1,3);
+plot(likelihood_mvn_verginica(testdata_verginica), 'b');
+
+%KLASSIFIZIERE die Schwertlilienarten in RESULTVEKTOR
+%1=Setosa, 2=Versicolor, 3=Verginica
+
+%SETOSA
+test_mvn_S1 = bayes_mvn_setosa(testdata_setosa);
+test_mvn_S2 = bayes_mvn_versicolor(testdata_setosa);
+test_mvn_S3 = bayes_mvn_verginica(testdata_setosa);
+result_mvn_Set(test_mvn_S1>test_mvn_S2 & test_mvn_S1>test_mvn_S3)=1; 
+result_mvn_Set(test_mvn_S2>test_mvn_S1 & test_mvn_S2>test_mvn_S3)=2;
+result_mvn_Set(test_mvn_S3>test_mvn_S1 & test_mvn_S3>test_mvn_S2)=3;
+
+%VERSICOLOR
+test_mvn_VE1 = bayes_mvn_setosa(testdata_versicolor);
+test_mvn_VE2 = bayes_mvn_versicolor(testdata_versicolor);
+test_mvn_VE3 = bayes_mvn_verginica(testdata_versicolor);
+result_mvn_VE(test_mvn_VE1>test_mvn_VE2 & test_mvn_VE1>test_mvn_VE3)=1;
+result_mvn_VE(test_mvn_VE2>test_mvn_VE1 & test_mvn_VE2>test_mvn_VE3)=2;
+result_mvn_VE(test_mvn_VE3>test_mvn_VE1 & test_mvn_VE3>test_mvn_VE2)=3;
+
+%VERGINICA
+test_mvn_VA1 = bayes_mvn_setosa(testdata_verginica);
+test_mvn_VA2 = bayes_mvn_versicolor(testdata_verginica);
+test_mvn_VA3 = bayes_mvn_verginica(testdata_verginica);
+result_mvn_VA(test_mvn_VA1>test_mvn_VA2 & test_mvn_VA1>test_mvn_VA3)=1;
+result_mvn_VA(test_mvn_VA2>test_mvn_VA1 & test_mvn_VA2>test_mvn_VA3)=2;
+result_mvn_VA(test_mvn_VA3>test_mvn_VA1 & test_mvn_VA3>test_mvn_VA2)=3;
+
+%SETOSA
+tp_mvn_Setosa = sum(result_mvn_Set==1);
+tn_mvn_Setosa = sum(result_mvn_VE ~=1)+sum(result_mvn_VA~=1);
+fp_mvn_Setosa = sum(result_mvn_VE ==1)+sum(result_mvn_VA==1);
+fn_mvn_Setosa = sum(result_mvn_Set~=1);
+
+%VERSICOLOR
+tp_mvn_Versicolor = sum(result_mvn_VE==2);
+tn_mvn_Versicolor = sum(result_mvn_Set ~=2)+sum(result_mvn_VA~=2);
+fp_mvn_Versicolor = sum(result_mvn_Set ==2)+sum(result_mvn_VA==2);
+fn_mvn_Versicolor = sum(result_mvn_VE~=2);
+
+%VERGINICA
+tp_mvn_Verginica = sum(result_mvn_VA==3);
+tn_mvn_Verginica = sum(result_mvn_Set ~=3)+sum(result_mvn_VE~=3);
+fp_mvn_Verginica = sum(result_mvn_Set ==3)+sum(result_mvn_VE==3);
+fn_mvn_Verginica = sum(result_mvn_VA~=3);
 
