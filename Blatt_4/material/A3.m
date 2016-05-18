@@ -10,7 +10,7 @@ mu0 = -10; %Priori Schätzer
 sigma0=1; % Unsicherheit für Priori Schätzer
 sigma =1; %wahres Sigma
 
-resMu=[];% entaehlt alle bayes geschaetzten Mittelwerte
+resMu=[0,0,0,0,0,0];% entaehlt alle bayes geschaetzten Mittelwerte
 for ii=i
     numSamples = 2^ii*10;
     idata = data(1:numSamples);
@@ -18,7 +18,7 @@ for ii=i
     part1 = (numSamples*sigma0)/(numSamples*sigma0+sigma)*sampleMean;
     part2 = sigma/(numSamples*sigma0+sigma) * mu0 ;
     muN = part1+part2;
-    resMu=[resMu muN];
+    resMu(ii+1)=muN;
 end
 %%
 %e)
@@ -66,3 +66,6 @@ fplot(afunc,[-5 10], 'b')
 fplot(i5func,[-5 10], 'r')
 hold off;
 print(figure(1), '-djpeg', strcat('../plots/ApproxVsBayes.jpg'));
+%%
+%f)
+
