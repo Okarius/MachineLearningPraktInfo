@@ -18,7 +18,7 @@
 
 \begin{document}
 \maketitle
-\section*{1. Fragen zur Vorlesung}
+\section{Fragen zur Vorlesung}
 \subsection*{a) Darstellung als log-likelihood und warum sinnvoll?}
 \[ ln (p(D|\vartheta)) = \Sigma^n_{k=1} ln (p(D|\vartheta)) \]
 Sinnvoll: \\
@@ -48,5 +48,28 @@ In der Statistik bezeichnet der Schätzfehler die Abweichung einer Schätzfunkti
 
 Ein Modellfehler hat also nichts mit einem Statistischen Ergebnis zu tun.(Schätzfehler zu) Ein Modellfehler ist der Fehler den man hat wenn man von Grund auf von einem Fehlerhaften Modell ausgeht. \\
 
+
+
+\section{Maximum-Likelihood-Schätzung}
+\subsection*{Nachweis, dass der Maximum-Likelihood-Schätzer für den Parameter $\mu$ dem Durchschnitt der Stichprobe entspricht. (10 Punkte)}
+Es ist:\\
+$p(x)=1/(\sqrt{2\pi \sigma^2})* \exp(-(x_i-\mu)^2/(2\sigma^2))$\\
+Da $\sigma$ bekannt ist und als Konstante betrachtet werden kann gilt für MLE:\\
+$MLE: p(X|\mu)=\prod_{i=1}^{n}p(x_i) $\\
+$=\prod_{i=1}^{n}1/(\sqrt{2\pi \sigma^2})*\exp(-(x_I-\mu)^2/(2\sigma^2))) $\\
+$= 1/((2\pi \sigma)^{n/2})* \exp(-1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2)$
+
+Mit Log-MLE:\\
+$\ln(p(X|\mu))= -n/2*\ln(2\pi \sigma) - 1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2$\\
+Ableiten nach $\mu$ ergibt:\\
+$\frac{\partial p(X|\mu)}{\partial \mu} = \frac{1}{\sigma^2}*\sum_{i=1}^{n}(x_i-\mu)$
+
+Ableitung = 0 gdw. Summenterm 0 ergibt!
+$\sum_{i=1}^{n}(x_i-\mu) = 0$\\
+$\sum_{i=1}^{n}(x_i)-n*\mu = 0$
+$\mu = \sum_{i=1}^{n}(x_i) / n$
+
+Damit ist gezeigt, dass der Schätzer von MLE für $\mu$ dem Durchschnitt der Stichprobe entspricht.
+ 
 
 \end{document}
