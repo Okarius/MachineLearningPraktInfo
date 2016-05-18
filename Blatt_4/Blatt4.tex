@@ -16,6 +16,9 @@
 \author{Nikolas Zeitler, Joshua Hartmann, Alexander Diegel}
 \title{Maschinelles Lernen Blatt 3}
 
+%INFO bitte mit TODO-tags arbeiten, dann sieht man es im Studio auf der linken seite
+%TODO Beispiel 
+
 \begin{document}
 \maketitle
 \section{Fragen zur Vorlesung}
@@ -25,7 +28,8 @@ Sinnvoll: \\
 %wikipedia:
 Kann im Rahmen der Maximum-Likelihood-Methode verwendet werden. Dies ist ein parametrisches Schätzverfahren. dabei wird der parameter als Schätzung gewählt der abhängig von der Verteilung am richtigsten wirkt.\\
 Log ist numerisch stabiler.  \\
-@Team das ist jetzt die 0815 antwort warum man log nimmt??
+Logarithmus wandelt den Produktterm in einen Summenterm um. Eine Summe ist idR. einfacher zu maximieren 
+als ein Produkt (Rechenoperationen gehen schneller aus Computersicht). -Maximum Likelihood such Parameter, die die Trainingsdaten am besten erklären.
 \subsection*{b) Wie berechnet man Erwartungswert und Standardabweichung}
 Foliensatz 3 S.9 \\
 %Mu/Sigma mit dächlein ? Tech befehl suchen
@@ -57,19 +61,37 @@ $p(x)=1/(\sqrt{2\pi \sigma^2})* \exp(-(x_i-\mu)^2/(2\sigma^2))$\\
 Da $\sigma$ bekannt ist und als Konstante betrachtet werden kann gilt für MLE:\\
 $MLE: p(X|\mu)=\prod_{i=1}^{n}p(x_i) $\\
 $=\prod_{i=1}^{n}1/(\sqrt{2\pi \sigma^2})*\exp(-(x_I-\mu)^2/(2\sigma^2))) $\\
-$= 1/((2\pi \sigma)^{n/2})* \exp(-1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2)$
-
+$= 1/((2\pi \sigma)^{n/2})* \exp(-1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2)$\\\\
 Mit Log-MLE:\\
-$\ln(p(X|\mu))= -n/2*\ln(2\pi \sigma) - 1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2$\\
+$\ln(p(X|\mu))= -n/2*\ln(2\pi \sigma) - 1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2$\\\\
 Ableiten nach $\mu$ ergibt:\\
-$\frac{\partial p(X|\mu)}{\partial \mu} = \frac{1}{\sigma^2}*\sum_{i=1}^{n}(x_i-\mu)$
-
-Ableitung = 0 gdw. Summenterm 0 ergibt!
+$\frac{\partial p(X|\mu)}{\partial \mu} = \frac{1}{\sigma^2}*\sum_{i=1}^{n}(x_i-\mu)$\\\\
+Ableitung = 0 gdw. Summenterm 0 ergibt!\\
 $\sum_{i=1}^{n}(x_i-\mu) = 0$\\
-$\sum_{i=1}^{n}(x_i)-n*\mu = 0$
+$\sum_{i=1}^{n}(x_i)-n*\mu = 0$\\
 $\mu = \sum_{i=1}^{n}(x_i) / n$
 
 Damit ist gezeigt, dass der Schätzer von MLE für $\mu$ dem Durchschnitt der Stichprobe entspricht.
  
+
+\section{Bayessche Parameterschätzung}
+\subsection*{a) Paramterbeschreibung}
+\begin{itemize}
+	\item $\hat{\mu_n}$:\\
+	Mittelwert der Stichprobe für n=0 wird er unendlich groß da er gemäß $\sum(x_i) /n$ berechnet wird. Für großes n nähert sich der Stichprobenmittelwert dem wahren Mittelwert der Verteilung immer mehr an. Für n = $\infty$ entspricht er dem wahren Mittelwert. Für kleines n ist der Mittelwert der Stichprobe gegenüber dem wahren Mittelwert der Verteilung mit Unsicherheit behaftet.
+	\item $\mu_0$:\\
+	A priori Schätzer für den Mittelwert. Ändert sich nicht für unterschiedliches n. 
+	%TODO stimmt das mit \mu_0 so?
+	\item $\sigma^2_0$:\\
+	Gibt Unsicherheit für das geschätzte a priori $\mu_0$ an. Unabhängig von n.
+	%TODO stimmt das mit \sigma^2_0 so?
+	\item $\sigma^2$:\\
+	Wahre Varianz der normalverteilten Zufallsvariablen. An der wahren Varianz ändert sich durch die Stichprobengröße ebenfalls nichts.
+\end{itemize}
+
+\subsection*{b) Auskunft $\sigma^2_n$}
+$\sigma^2_n$ gibt die Unsicherheit für den, mit der Bayesschätzung, geschätzten Mittelwert $\mu_n$ nach n Samples an. Umso mehr Samples verwendet werden, desto kleiner wird die Varianz und desto mehr entspricht sie der wahren Varianz der Verteilung.
+
+
 
 \end{document}
