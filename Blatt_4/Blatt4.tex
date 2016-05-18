@@ -1,0 +1,52 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{bussproofs}
+\usepackage{scrpage2}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{mathtools}
+\usepackage{hyperref}
+\pagestyle{scrheadings}
+\renewcommand{\thesubsection}{\alph{subsection}}
+\clearscrheadfoot
+\ohead[]{Nikolas Zeitler, Joshua Hartmann, Alexander Diegel}
+\cfoot[\pagemark]{\pagemark}
+\author{Nikolas Zeitler, Joshua Hartmann, Alexander Diegel}
+\title{Maschinelles Lernen Blatt 3}
+
+\begin{document}
+\maketitle
+\section*{1. Fragen zur Vorlesung}
+\subsection*{a) Darstellung als log-likelihood und warum sinnvoll?}
+\[ ln (p(D|\vartheta)) = \Sigma^n_{k=1} ln (p(D|\vartheta)) \]
+Sinnvoll: \\
+%wikipedia:
+Kann im Rahmen der Maximum-Likelihood-Methode verwendet werden. Dies ist ein parametrisches Schätzverfahren. dabei wird der parameter als Schätzung gewählt der abhängig von der Verteilung am richtigsten wirkt.\\
+Log ist numerisch stabiler.  \\
+@Team das ist jetzt die 0815 antwort warum man log nimmt??
+\subsection*{b) Wie berechnet man Erwartungswert und Standardabweichung}
+Foliensatz 3 S.9 \\
+%Mu/Sigma mit dächlein ? Tech befehl suchen
+\[\mu = \frac{1}{n}\Sigma^n_{k=1}x_k \]
+
+\[\sigma^2 = \frac{1}{n-1}\Sigma^n_{k=1}(x_k-\mu)^2 \]
+
+\subsection*{c)Was ist die Hauptannahme bei der Bayesschen Parameterschätzung}
+Da Bayes genutzt wird müssen die Messungen unabhängig sein. 
+\subsection*{d)}
+Foliensatz 4 Folie 19 hat kein Formel???
+
+\subsection*{e) Welche Fehler bei Parameterschätzung möglich}
+Bei einer sehr hohen Standardabweichung braucht man entsprechend viele Messungen sonst ist das Ergebnis "geraten" und damit womöglich Fehlerhaft.\\
+@Team joar noch was?
+\subsection*{f) Unterschied Schätzfehler und Modellfehler}
+Wikipedia: \\
+Ein Modellfehler ergibt sich aus einem fehlerhaften Modellansatz. Solch ein Fehler ist kein statistisches Phänomen, sondern ein sog. Wirklichkeitsphänomen, kann also beispielsweise durch eine Korrektur der Modellstruktur behoben werden. \\
+In der Statistik bezeichnet der Schätzfehler die Abweichung einer Schätzfunktion $\hat{\vartheta}$ vom unbekannten Parameter der Grundgesamtheit $\vartheta$. Er ist ein Maß für die Güte der Schätzfunktion (oder Interpolation). \\
+
+Ein Modellfehler hat also nichts mit einem Statistischen Ergebnis zu tun.(Schätzfehler zu) Ein Modellfehler ist der Fehler den man hat wenn man von Grund auf von einem Fehlerhaften Modell ausgeht. \\
+
+
+\end{document}
