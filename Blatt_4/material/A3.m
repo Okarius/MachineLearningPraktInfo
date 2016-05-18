@@ -67,5 +67,11 @@ fplot(i5func,[-5 10], 'r')
 hold off;
 print(figure(1), '-djpeg', strcat('../plots/ApproxVsBayes.jpg'));
 %%
-%f)
+%f) Stimmt das so?
+mse0 = mean((i0func(-5:.001:10)-afunc(-5:.001:10)).^2);
+mse1 = mean((i1func(-5:.001:10)-afunc(-5:.001:10)).^2);
+mse2 = mean((i2func(-5:.001:10)-afunc(-5:.001:10)).^2);
+mse3 = mean((i3func(-5:.001:10)-afunc(-5:.001:10)).^2);
+mse4 = mean((i4func(-5:.001:10)-afunc(-5:.001:10)).^2);
+mse5 = mean((i5func(-5:.001:10)-afunc(-5:.001:10)).^2);
 

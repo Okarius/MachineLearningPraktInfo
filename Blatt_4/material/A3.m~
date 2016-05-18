@@ -18,7 +18,7 @@ for ii=i
     part1 = (numSamples*sigma0)/(numSamples*sigma0+sigma)*sampleMean;
     part2 = sigma/(numSamples*sigma0+sigma) * mu0 ;
     muN = part1+part2;
-    resMu(ii)=muN;
+    resMu(ii+1)=muN;
 end
 %%
 %e)
@@ -68,4 +68,4 @@ hold off;
 print(figure(1), '-djpeg', strcat('../plots/ApproxVsBayes.jpg'));
 %%
 %f)
-
+immse(i0func([]),afunc()
