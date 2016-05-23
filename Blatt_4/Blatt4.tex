@@ -26,10 +26,13 @@
 \[ ln (p(D|\vartheta)) = \Sigma^n_{k=1} ln (p(D|\vartheta)) \]
 Sinnvoll: \\
 %wikipedia:
-Kann im Rahmen der Maximum-Likelihood-Methode verwendet werden. Dies ist ein parametrisches Schätzverfahren. dabei wird der parameter als Schätzung gewählt der abhängig von der Verteilung am richtigsten wirkt.\\
-Log ist numerisch stabiler.  \\
-Logarithmus wandelt den Produktterm in einen Summenterm um. Eine Summe ist idR. einfacher zu maximieren 
-als ein Produkt (Rechenoperationen gehen schneller aus Computersicht). -Maximum Likelihood such Parameter, die die Trainingsdaten am besten erklären.
+Kann im Rahmen der Maximum-Likelihood-Methode verwendet werden. Dies ist ein parametrisches Schätzverfahren. Dabei wird der Parameter als Schätzung gewählt, der abhängig von der Verteilung die Daten am besten erklärt.\\
+Der Logarithmus wandelt den Produktterm in einen Summenterm um. Eine Summe ist idR. einfacher zu maximieren 
+als ein Produkt (Rechenoperationen gehen schneller aus Computersicht) da jeder Term für sich abgeleitet werden kann und keine Produktregel angewandt werden muss.
+
+Das Maximum des Ausdrucks bleibt auch weiterhin das Maximum des logarithmierten Ausdrucks, daher ist die Form dem Vorhaben nicht abträglich. 
+
+Maximum Likelihood such Parameter, die die Trainingsdaten am besten erklären.
 \subsection*{b) Wie berechnet man Erwartungswert und Standardabweichung}
 Foliensatz 3 S.9 \\
 %Mu/Sigma mit dächlein ? Tech befehl suchen
@@ -38,7 +41,7 @@ Foliensatz 3 S.9 \\
 \[\sigma^2 = \frac{1}{n-1}\Sigma^n_{k=1}(x_k-\mu)^2 \]
 
 \subsection*{c)Was ist die Hauptannahme bei der Bayesschen Parameterschätzung}
-Da Bayes genutzt wird müssen die Messungen unabhängig sein.%TODO echt, wir hatten doch auch Multivariate? 
+Da Bayes genutzt wird müssen die Messungen unabhängig sein. %TODO echt, wir hatten doch auch Multivariate? 
 Die klassenabhängige Dichte $p(x|w_i,D)$ sei nur von den Daten der jeweiligen Klasse abhängig, und betrachten daher nur eine Klasse. Das $w_i$ entfällt also.
 \subsection*{d)}
 Um die Unsicherheit auszugleichen die wir mit dem geschätzten $\mu$ gemacht haben wird die bekannte Varianz um $\sigma_m^2$ vergößert. Deswegen gilt die Formel wie sie da steht.
@@ -63,19 +66,19 @@ Der Schätzfehler verbessert sich mit zunehmender Anzahl an Stichproben, der Mod
 \section{Maximum-Likelihood-Schätzung}
 \subsection*{Nachweis, dass der Maximum-Likelihood-Schätzer für den Parameter $\mu$ dem Durchschnitt der Stichprobe entspricht. (10 Punkte)}
 Es ist:\\
-$p(x)=1/(\sqrt{2\pi \sigma^2})* \exp(-(x_i-\mu)^2/(2\sigma^2))$\\
+$p(x)=\frac{1}{(\sqrt{2\pi \sigma^2})} \cdot \exp(-\frac{(x_i-\mu)^2}{2\sigma^2})$\\
 Da $\sigma$ bekannt ist und als Konstante betrachtet werden kann gilt für MLE:\\
 $MLE: p(X|\mu)=\prod_{i=1}^{n}p(x_i) $\\
-$=\prod_{i=1}^{n}1/(\sqrt{2\pi \sigma^2})*\exp(-(x_I-\mu)^2/(2\sigma^2))) $\\
-$= 1/((2\pi \sigma)^{n/2})* \exp(-1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2)$\\\\
+$=\prod_{i=1}^{n}\frac{1}{\sqrt{2\pi \sigma^2}} \cdot \exp(-\frac{(x_i-\mu)^2}{2\sigma^2}) $\\
+$= \frac{1}{(2\pi \sigma)^{n/2}} \cdot \exp(-\frac{1}{2\sigma^2} \cdot \sum_{i=1}^{n}(x_i-\mu)^2)$\\\\
 Mit Log-MLE:\\
-$\ln(p(X|\mu))= -n/2*\ln(2\pi \sigma) - 1/(2\sigma^2)*\sum_{i=1}^{n}(x_i-\mu)^2$\\\\
+$\ln(p(X|\mu))= -\frac{n}{2} \cdot \ln(2\pi \sigma) - \frac{1}{2\sigma^2} \cdot \sum_{i=1}^{n}(x_i-\mu)^2$\\\\
 Ableiten nach $\mu$ ergibt:\\
-$\frac{\partial p(X|\mu)}{\partial \mu} = \frac{1}{\sigma^2}*\sum_{i=1}^{n}(x_i-\mu)$\\\\
+$\frac{\partial p(X|\mu)}{\partial \mu} = \frac{1}{\sigma^2} \cdot \sum_{i=1}^{n}(x_i-\mu)$\\\\
 Ableitung = 0 gdw. Summenterm 0 ergibt!\\
 $\sum_{i=1}^{n}(x_i-\mu) = 0$\\
-$\sum_{i=1}^{n}(x_i)-n*\mu = 0$\\
-$\mu = \sum_{i=1}^{n}(x_i) / n$
+$\sum_{i=1}^{n}(x_i)-n \cdot \mu = 0$\\
+$\mu = \frac{\sum_{i=1}^{n}x_i}{n}$
 
 Damit ist gezeigt, dass der Schätzer von MLE für $\mu$ dem Durchschnitt der Stichprobe entspricht.
  
