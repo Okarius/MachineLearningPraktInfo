@@ -34,36 +34,42 @@ subplot(3,2,1);
 hold on;
 fplot(afunc,[-5 10], 'b')
 fplot(i0func,[-5 10], 'r')
+title('i=0');
 hold off;
 
 subplot(3,2,2);
 hold on;
 fplot(afunc,[-5 10], 'b')
 fplot(i1func,[-5 10], 'r')
+title('i=1');
 hold off;
 
 subplot(3,2,3);
 hold on;
 fplot(afunc,[-5 10], 'b')
 fplot(i2func,[-5 10], 'r')
+title('i=2');
 hold off;
 
 subplot(3,2,4);
 hold on;
 fplot(afunc,[-5 10], 'b')
 fplot(i3func,[-5 10], 'r')
+title('i=3');
 hold off;
 
 subplot(3,2,5);
 hold on;
 fplot(afunc,[-5 10], 'b')
 fplot(i4func,[-5 10], 'r')
+title('i=4');
 hold off;
 
 subplot(3,2,6);
 hold on;
 fplot(afunc,[-5 10], 'b')
 fplot(i5func,[-5 10], 'r')
+title('i=5');
 hold off;
 print(figure(1), '-djpeg', strcat('../plots/ApproxVsBayes.jpg'));
 %%
