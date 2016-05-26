@@ -1,5 +1,5 @@
 %% Blatt 4
-% Hartmann, Zeitschler, Diegel
+% Hartmann, Zeitler, Diegel
 
 %%Aufgabe 3
 %%

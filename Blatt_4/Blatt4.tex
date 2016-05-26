@@ -41,19 +41,16 @@ Foliensatz 3 S.9 \\
 \[\sigma^2 = \frac{1}{n-1}\Sigma^n_{k=1}(x_k-\mu)^2 \]
 
 \subsection*{c)Was ist die Hauptannahme bei der Bayesschen Parameterschätzung}
-Da Bayes genutzt wird müssen die Messungen unabhängig sein. %TODO echt, wir hatten doch auch Multivariate? 
 Die klassenabhängige Dichte $p(x|w_i,D)$ sei nur von den Daten der jeweiligen Klasse abhängig, und betrachten daher nur eine Klasse. Das $w_i$ entfällt also.
 \subsection*{d)}
 Um die Unsicherheit auszugleichen die wir mit dem geschätzten $\mu$ gemacht haben wird die bekannte Varianz um $\sigma_m^2$ vergößert. Deswegen gilt die Formel wie sie da steht.
 
 
 \subsection*{e) Welche Fehler bei Parameterschätzung möglich}
-Bei einer sehr hohen Standardabweichung braucht man entsprechend viele Messungen sonst ist das Ergebnis "geraten" und damit womöglich Fehlerhaft.\\
-\begin{itemize}
-	\item Bayes Fehler
-	\item Modell- Fehler
-	\item Schätzfehler
-\end{itemize}
+\paragraph{Bayes Fehler} Man entscheidet sich falsch.
+\paragraph{Modell- Fehler} Falsche parametrische Form für $\mu$ und $\sigma^2$ gewählt. Man arbeitet also mit dem falschen Modell
+\paragraph{Schätzfehler} Zu wenige Trainingsdaten. 
+
 \subsection*{f) Unterschied Schätzfehler und Modellfehler}
 Wikipedia: \\
 Ein Modellfehler ergibt sich aus einem fehlerhaften Modellansatz. Solch ein Fehler ist kein statistisches Phänomen, sondern ein sog. Wirklichkeitsphänomen, kann also beispielsweise durch eine Korrektur der Modellstruktur behoben werden. \\
@@ -87,7 +84,7 @@ Damit ist gezeigt, dass der Schätzer von MLE für $\mu$ dem Durchschnitt der St
 \subsection*{a) Paramterbeschreibung}
 \begin{itemize}
 	\item $\hat{\mu_n}$:\\
-	Mittelwert der Stichprobe für n=0 wird er unendlich groß da er gemäß $\sum(x_i) /n$ berechnet wird. Für großes n nähert sich der Stichprobenmittelwert dem wahren Mittelwert der Verteilung immer mehr an. Für n = $\infty$ entspricht er dem wahren Mittelwert. Für kleines n ist der Mittelwert der Stichprobe gegenüber dem wahren Mittelwert der Verteilung mit Unsicherheit behaftet.
+	Mittelwert der Stichprobe für n=0 ist nicht definiert. Die Formel lautet: $\sum(x_i) /n$ Division durch null ist nicht gestattet und wenn $n=0$ ist gibt es auch kein $x_i$ da es keine Stichproben gibt. Für großes n nähert sich der Stichprobenmittelwert dem wahren Mittelwert der Verteilung immer mehr an. Für n = $\infty$ entspricht er dem wahren Mittelwert. Für kleines n ist der Mittelwert der Stichprobe gegenüber dem wahren Mittelwert der Verteilung mit Unsicherheit behaftet.
 	\item $\mu_0$:\\
 	A priori Schätzer für den Mittelwert. Ändert sich nicht für unterschiedliches n. 
 	%TODO stimmt das mit \mu_0 so?
