@@ -73,7 +73,7 @@ title('i=5');
 hold off;
 print(figure(1), '-djpeg', strcat('../plots/ApproxVsBayes.jpg'));
 %%
-%f) Stimmt das so?
+%f) 
 mse0 = mean((i0func(-5:.001:10)-afunc(-5:.001:10)).^2);
 mse1 = mean((i1func(-5:.001:10)-afunc(-5:.001:10)).^2);
 mse2 = mean((i2func(-5:.001:10)-afunc(-5:.001:10)).^2);
