@@ -1,0 +1,12 @@
+Feedback Übung 3				Diegel, Hartmann, Zeitler
+
+
+b	c	d	e	f	g					
+4,0	2,0	10,0	4,0	4,0	10,0
+
+
+Σ Ü3 	34,0
+
+
+Anmerkungen:
+
