@@ -32,11 +32,24 @@
 \begin{enumerate}[a)]
 	\item Warum wendet man die Principal Component Analysis (PCA) an? (Zwei Gründe sollten genannt werden.)
 	
+	1. Dimensionsreduktion, falls Verarbeitung aller vorhandener Dimensionen zu komplex wäre.
+	
+	2. 
+	
 	\item Was ist der Unterschied zwischen der PCA und der (Fisher) Linear Discriminant Analysis (LDA)?
+	
+	PCA wird zur Repräsentation von Daten genutzt genutzt.\\
+	LDA hingegen wird zur Klassifikation genutzt.
 	
 	\item Welcher Abstand soll von der LDA maximiert werden?
 	
+	An sich soll der Abstand der Mittelwerte maximiert werden.
+	
 	\item Warum genügt es nicht, den eben genannten Abstand zu maximieren?
+	
+	Es ist auch wichtig, wie weit gestreut wird.
+	
+	Es ist z.B.  oft besser, wenn man sehr scharfe Verteilungen erhält deren Mittelwert näher beieinander liegen als Verteilungen, deren Mittelwerte zwar weiter auseinander liegen, die aber wegen großer Streuung doch stark überlappen.
 	
 	\item Was beschreibt die within-class scatter matrix (Foliensatz 5, Folie 17)?
 	
@@ -45,8 +58,8 @@
 	\item Man gebe sowohl für PCA als auch LDA an, ob es sich um ein supervised oder unsupervised Lernverfahren
 	handelt.
 	
-	\textbf{PCA}: \\
-	\textbf{LCA}:
+	\textbf{PCA}: Unsupervised\\
+	\textbf{LCA}: Supervised
 	
 \end{enumerate}
 
@@ -57,45 +70,61 @@
 \begin{enumerate}[(a)]
 	\item \hfill
 	
-	\includegraphics[width=0.75\textwidth]{data/img1.jpg}
+	\includegraphics[width=0.5\textwidth]{data/img1_pc.jpg}
 		
-	\begin{enumerate}
+	\begin{enumerate}[1.]
 		\item Bietet sich im Allgemeinen eine Dimensionsreduktion auf den PC-Vektor an?
 		
+		Die Daten befinden sich relativ gut auf einer Geraden, also bietet sich eine Dimensionsreduktion an.
+		
 		\item Ist dies für die Klassifikation förderlich?
+		
+		Nein ist es nicht, durch eine Reduktion sind die Klassen nicht gut unterscheidbar.
 		
 	\end{enumerate}
 	
 	\item \hfill
 	
-	\includegraphics[width=0.75\textwidth]{data/img2.jpg}
+	\includegraphics[width=0.5\textwidth]{data/img2_pc.jpg}
 	
-	\begin{enumerate}
+	\begin{enumerate}[1.]
 		\item Bietet sich im Allgemeinen eine Dimensionsreduktion auf den PC-Vektor an?
 		
+		Die Daten befinden sich tendenziell eher auf einer Linie. Eine Dimensionsreduktion könnte sich durchaus anbieten, falls der Verlust des Var2 Wertes hinnehmbar ist, denn die Daten unterscheiden sich stark im Bezug auf den Var1 Wert.
+		
 		\item Ist dies für die Klassifikation förderlich?
+		
+		Nein ist es nicht, durch eine Reduktion sind die Klassen nicht gut unterscheidbar.
 		
 	\end{enumerate}
 	
 	\item \hfill
 	
-	\includegraphics[width=0.75\textwidth]{data/img3.jpg}
+	\includegraphics[width=0.5\textwidth]{data/img3_pc.jpg}
 	
-	\begin{enumerate}
+	\begin{enumerate}[1.]
 		\item Bietet sich im Allgemeinen eine Dimensionsreduktion auf den PC-Vektor an?
 		
+		Ja, die Daten unterscheiden sich hauptsächlich im Wert von Var1, eine Dimensionsreduktion bietet sich also an.
+		
 		\item Ist dies für die Klassifikation förderlich?
+		
+		Ja ist es, durch eine Reduktion sind die Klassen immer noch gut unterscheidbar.
 		
 	\end{enumerate}
 	
 	\item \hfill
 	
-	\includegraphics[width=0.75\textwidth]{data/img4.jpg}
+	\includegraphics[width=0.5\textwidth]{data/img4_pc.jpg}
 	
-	\begin{enumerate}
+	\begin{enumerate}[1.]
 		\item Bietet sich im Allgemeinen eine Dimensionsreduktion auf den PC-Vektor an?
 		
+		Die Daten befinden sich tendenziell eher auf einer Linie. Eine Dimensionsreduktion könnte sich durchaus anbieten, falls der Verlust des Var1 Wertes hinnehmbar ist, denn die Daten unterscheiden sich stark im Bezug auf den Var2 Wert.
+		
 		\item Ist dies für die Klassifikation förderlich?
+		
+		Nein ist es nicht, durch eine Reduktion sind die Klassen nicht gut unterscheidbar.
 		
 	\end{enumerate}
 	
