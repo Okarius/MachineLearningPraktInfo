@@ -32,7 +32,7 @@
 \begin{enumerate}[a)]
 	\item Warum wendet man die Principal Component Analysis (PCA) an? (Zwei Gründe sollten genannt werden.)
 	
-	1. Dimensionsreduktion, falls Verarbeitung aller vorhandener Dimensionen zu komplex wäre.
+	1. Dimensionsreduktion (durch Linearkombination von Merkmalen), falls Verarbeitung aller vorhandener Dimensionen zu komplex wäre.
 	
 	2. 
 	
@@ -43,7 +43,7 @@
 	
 	\item Welcher Abstand soll von der LDA maximiert werden?
 	
-	An sich soll der Abstand der Mittelwerte maximiert werden.
+	An sich soll der Abstand der Mittelwerte (im Verhältnis zur Streuung der Klassen) maximiert werden.
 	
 	\item Warum genügt es nicht, den eben genannten Abstand zu maximieren?
 	
@@ -52,8 +52,10 @@
 	Es ist z.B.  oft besser, wenn man sehr scharfe Verteilungen erhält deren Mittelwert näher beieinander liegen als Verteilungen, deren Mittelwerte zwar weiter auseinander liegen, die aber wegen großer Streuung doch stark überlappen.
 	
 	\item Was beschreibt die within-class scatter matrix (Foliensatz 5, Folie 17)?
+	Die within-class scatter matrix beschreibt die Streuung/Varianz innerhalb einer Klasse (wir wollen, dass die Punkte einer Klasse möglichst eng beieinander liegen).
 	
 	\item Was beschreibt die between-class scatter matrix (Foliensatz 5, Folie 18)?
+	Die between-class scatter matrix beschreibt den Abstand der projezierten Klassen-Mittelwerte (dieser Abstand sollte möglichst groß sein).
 	
 	\item Man gebe sowohl für PCA als auch LDA an, ob es sich um ein supervised oder unsupervised Lernverfahren
 	handelt.
