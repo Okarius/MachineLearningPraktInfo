@@ -11,7 +11,7 @@ alldata = [traindata_setosa; traindata_versicolor; traindata_verginica];
 %%
 %b) Durchfuehrung PCA
 [pc ws sc] = pca(alldata);
-dim=2; %will ich auf die ersten 2 (dim) dimensionen projezieren dann so
+dim=1; %will ich auf die ersten 2 (dim) dimensionen projezieren dann so
 firstComp = pc(:,1:dim);
 % Projeziere auf firstComp
 newData = (firstComp.'*alldata.').';
@@ -19,5 +19,23 @@ newData = (firstComp.'*alldata.').';
 %c)
 % die erste Komponente (sepale Laenge) macht alleine 92.3% aus. 
 % Es sind also alle Kombinationen mit 1. Komponente zu pruefen.
-res = (sc(1)+sc(2))/sum(sc); %
+% Nur ersten beiden Komponenten enthalten zusammen mind. 95% der Streuung!
+res = (sc(1)+sc(2))/sum(sc); %97.68%
+res = (sc(1)+sc(3))/sum(sc); %94.00%
+res = (sc(1)+sc(4))/sum(sc); %92.91%
+res = (sc(1)+sc(3)+sc(4))/sum(sc); %94.62%
+
+%%
+%d) Projektion in Raum der mindestens 95% der Daten enthält
+dimd=2; 
+firstComp = pc(:,1:dimd);
+% Projeziere auf firstComp
+newDatad = (firstCompd.'*alldata.').';
+% A
+scatter(newDatad(:,1),newDatad(:,1))
+%%
+% e) das Ergebnis soll geeignet geplottet werden -HILFE?
+scatter(newDatad(:,1), ones(1,120))
+%Man erkennt 2 Cluster, die jetzt einfach mit einer Geraden separiert
+%werden können. 
 %%
