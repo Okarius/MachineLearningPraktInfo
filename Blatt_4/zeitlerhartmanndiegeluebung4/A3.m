@@ -21,7 +21,8 @@ for ii=i
     resMu(ii+1)=muN;
 end
 %%
-%e)
+%e)var_n= var_0*var/(n*var0+sig*sig Formel!
+% Varianz = 1+X
 afunc = @(x) normpdf(x,3,1);
 i0func=@(x) normpdf(x,resMu(1),1);
 i1func=@(x) normpdf(x,resMu(2),1);
@@ -80,4 +81,3 @@ mse2 = mean((i2func(-5:.001:10)-afunc(-5:.001:10)).^2);
 mse3 = mean((i3func(-5:.001:10)-afunc(-5:.001:10)).^2);
 mse4 = mean((i4func(-5:.001:10)-afunc(-5:.001:10)).^2);
 mse5 = mean((i5func(-5:.001:10)-afunc(-5:.001:10)).^2);
-

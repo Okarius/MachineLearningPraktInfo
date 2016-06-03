@@ -1,0 +1,33 @@
+Feedback Übung 4				Diegel, Hartmann, Zeitler
+
+
+A1								A2
+a	b	c	d	e	f	Σ		Σ
+4,0	1,0	0,5	0,5	1,0	1,0	8,0		10,0
+
+A3						
+a	b	d	e	f	g	Σ
+4,0	1,0	6,0	0,5	1,0	1,5	14,0
+
+Σ Ü4 	32,0
+
+
+Anmerkungen:
+
+3b:	teilweise falsch
+sigma_n für n->inf geht gegen 0! wird immer kleiner, je mehr Werte ich habe.
+
+3e:	falsches Sigma bei Schätzung
+
+
+3g:	unvollständig 
+- alex: mir ist noch unklar wofür es abzug gab oder was fehlt.
+
+ML:
+Suche Maximum wo Likelihood maximiert wird.
+ML würde immer das gleiche sagen  (nur Pferde oder nur Esel)
+
+BAYES:
+Würde Wahrscheinlichkeitsverteilung für Parameter berechnen und je nach X entscheiden.
+Bayes findet Moulis.
+Annahme, dass mu Normalverteilt ist verpfuscht u.U. unseren Bayes.
