@@ -32,9 +32,9 @@
 \begin{enumerate}[a)]
 	\item Warum wendet man die Principal Component Analysis (PCA) an? (Zwei Gründe sollten genannt werden.)
 	
-	1. Dimensionsreduktion (durch Linearkombination von Merkmalen), falls Verarbeitung aller vorhandener Dimensionen zu komplex wäre.
+	1. Dimensionsreduktion komplexer/multidimensionaler/hochdimensionaler Datensätze(durch Linearkombination von Merkmalen), falls Verarbeitung aller vorhandener Dimensionen zu komplex wäre.
 	
-	2. 
+	2. Mit der PCA kann man die Dimensionen des Datensatzes finden, die die meisten Informationen über die Daten enthalten. (Rauschen wird dabei ignoriert.)
 	
 	\item Was ist der Unterschied zwischen der PCA und der (Fisher) Linear Discriminant Analysis (LDA)?
 	
@@ -136,13 +136,18 @@
 \section{Principal Component Analysis – 2}
 
 \textbf{Welche PCs enthalten zusammen mindestens  95\% der Streuung?}\\
+Komponente 1 und 2 enthalten 97.6\% der Streuung (die erste Komponente allein macht  ca. 92\% aus).
+Die erste und zweite Komponente werden auf jeden Fall benötigt um die 95\% zu erreichen. 
+Komponente 3 und 4 haben fast keinen Einfluss auf die Streuung.\\
 
 
 \textbf{Plotten des Ergebnisses}\\
 
-%\includegraphics[width=0.75\textwidth]{plots/PlotName.jpg}
+\includegraphics[width=0.75\textwidth]{plots/plotresultE.jpg}
 
 \textbf{Ergibt die PCA in diesem Zusammenhang Sinn? Warum oder warum nicht?}\\
+Ja - wir sehen, dass es möglich ist unseren Datensatz durch eine Projektion in die entsprechende Richtungen (erste beiden Principal Components) zu separieren, in diesen beiden Richtungen/Komponenten ist die meiste Information des Datensatzes enthalten.
+Fuer eine Klassifikation bzw. Zuordnung der Pflanzen anhand der Merkmale macht diese Projektion aber keinen Sinn mehr. 
    
 \section{Linear Discriminant Analysis}
 

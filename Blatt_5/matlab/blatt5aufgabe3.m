@@ -28,16 +28,22 @@ res = (sc(1)+sc(3)+sc(4))/sum(sc); %94.62%
 %%
 %d) Projektion in Raum der mindestens 95% der Daten enthält
 dimd=2; 
-firstComp = pc(:,1:dimd);
+firstCompd = pc(:,1:dimd);
 % Projeziere auf firstComp
 newDatad = (firstCompd.'*alldata.').';
-% Alle Punkte werden auf eine Linie projeziert -zur Veranschaulichung habe
+%TEST Für d=1
+%Alle Punkte werden auf eine Linie projeziert -zur Veranschaulichung habe
 % ich deshalb Y=1 verwendet. Eigentlich waeren die Punkte alle auf der
 % SepalenLaenge-Achse.
-scatter(newDatad(:,1),ones(1,120))
+%scatter(newDatad(:,1),ones(1,120))
 %%
 % e) das Ergebnis soll geeignet geplottet werden -HILFE?
-scatter(newDatad(:,1), newDatad(:,2))
+figure(1);
+scatter(newDatad(:,1), newDatad(:,2));
+title('Projektion in Raum mit 95+% Streuung');
+xlabel('Principal Komponente 1');
+ylabel('Principal Komponente 2');
+print(figure(1), '-djpeg', strcat('../plots/plotresultE.jpg'));
 %Man erkennt 2 Cluster, die jetzt einfach mit einer Geraden separiert
 %werden können. 
 %%
