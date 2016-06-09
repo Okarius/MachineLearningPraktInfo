@@ -31,7 +31,7 @@ dimd=2;
 firstCompd = pc(:,1:dimd);
 % Projeziere auf firstComp
 newDatad = (firstCompd.'*alldata.').';
-%TEST
+%TEST Für d=1
 %Alle Punkte werden auf eine Linie projeziert -zur Veranschaulichung habe
 % ich deshalb Y=1 verwendet. Eigentlich waeren die Punkte alle auf der
 % SepalenLaenge-Achse.
@@ -39,10 +39,10 @@ newDatad = (firstCompd.'*alldata.').';
 %%
 % e) das Ergebnis soll geeignet geplottet werden -HILFE?
 figure(1);
-scatter(newDatad(:,1), newDatad(:,2),x);
+scatter(newDatad(:,1), newDatad(:,2));
 title('Projektion in Raum mit 95+% Streuung');
 xlabel('Principal Komponente 1');
-ylabel('Effective radius in micrometer');
+ylabel('Principal Komponente 2');
 print(figure(1), '-djpeg', strcat('../plots/plotresultE.jpg'));
 %Man erkennt 2 Cluster, die jetzt einfach mit einer Geraden separiert
 %werden können. 
