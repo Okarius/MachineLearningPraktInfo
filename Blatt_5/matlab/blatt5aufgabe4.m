@@ -21,12 +21,11 @@ mu = mean(c);
 % streumatrix == covarianzMatrix
 ScatterW1 = cov(c1);
 ScatterW2 = cov(c2);
-%Formeln aus dem Skript nehmen und nicht die covarianzmatrix...
 
 % scatter-within
 ScatterW =ScatterW1 + ScatterW2;
 
-% scatter-between
+% scatter-between- das hier muss eine 2x2 Matrix sein eigentlich
 ScatterB = (mu1 - mu2)*(mu1 - mu2)';
 %%
 %c Projektion
