@@ -64,9 +64,6 @@ for a=A
         end
     end
 end
-
-%val = sum(TBL_PA(A)*TBL_PB(B)*TBL_XAB(indices ,X)* TBL_CX(X,C)*TBL_DX(X,D))
-
 P=sum;
 end
 

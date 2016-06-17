@@ -21,6 +21,7 @@ mu = mean(c);
 % streumatrix == covarianzMatrix
 ScatterW1 = cov(c1);
 ScatterW2 = cov(c2);
+%Formeln aus dem Skript nehmen und nicht die covarianzmatrix...
 
 % scatter-within
 ScatterW =ScatterW1 + ScatterW2;

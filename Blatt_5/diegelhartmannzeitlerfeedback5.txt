@@ -1,0 +1,27 @@
+﻿Feedback Übung 5				Diegel, Hartmann, Zeitler
+
+
+A1									A2
+a	b	c	d	e	f	g	Σ		Σ
+1,0	1,0	1,0	1,0	1,0	1,0	1,0	7,0		8,0
+
+A3					
+b	c	d	e	f	Σ
+2,0	2,0	1,0	1,0	2,0	8,0
+
+A4			
+b	c	d	Σ
+2,5	1,0	1,0	4,5
+
+
+Σ Ü5 	27,5
+
+
+
+
+
+Anmerkungen:
+4b:	Fehler bei der Projektion, da ScatterW  und ScatterB falsch berechnet
+	wurde (ScatterB ist 2x2-Matrix, kein Skalar!)
+4d:	Einfarbige Darstellung ist hier unzureichend
+
