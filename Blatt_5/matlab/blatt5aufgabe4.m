@@ -25,8 +25,10 @@ ScatterW2 = cov(c2);
 % scatter-within
 ScatterW =ScatterW1 + ScatterW2;
 
-% scatter-between- das hier muss eine 2x2 Matrix sein eigentlich
+% scatter-between
 ScatterB = (mu1 - mu2)*(mu1 - mu2)';
+%Grad andersrum mit apostrophe machen
+
 %%
 %c Projektion
 proj = inv( ScatterW ) * ScatterB;
