@@ -1,6 +1,6 @@
 D = [2 4 5 8 15];
 n = numel(D);
-sigma = 1;
+sigma = 1.4;
 hold on;
 sum = @(x) 0;
 for idx = 1:n
@@ -10,7 +10,7 @@ for idx = 1:n
     sum = @(x) sum(x) + part(x);
 end
 %Sieht noch nicht genau gleich aus wie auf dem Blatt?
-%Finde den Fehler!->Sigma auf 1.4
+%Finde den Fehler!->
 fplot(sum, [0 20]);
 hold off;
 
@@ -19,9 +19,8 @@ D2 = csvread('D2.csv');
 
 M = [[0 0]; [7 7]; [30 20]; [14 40]];
 
-%%
 %PNN f�r D1 und D2
-for m=1:numel(M)/2 %length(M)=4 hier vllt besser?
+for m=1:numel(M)/2
     x = M(m,:);
     w_1 = 0;    
     w_2 = 0;
@@ -31,7 +30,7 @@ for m=1:numel(M)/2 %length(M)=4 hier vllt besser?
        w_1 = w_1 + value_node_i;
     end
     
-    for idx = 1:numel(D2)/2 
+    for idx = 1:numel(D2)/2
        x_i = D2(idx,:);
        value_node_i = exp(-(x_i - x) * (x_i - x).' / (2*sigma^2));
        w_2 = w_2 + value_node_i;
