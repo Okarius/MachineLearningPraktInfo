@@ -1,6 +1,6 @@
 D = [2 4 5 8 15];
 n = numel(D);
-sigma = 1;
+sigma = 1.4;
 hold on;
 sum = @(x) 0;
 for idx = 1:n
@@ -19,7 +19,7 @@ D2 = csvread('D2.csv');
 
 M = [[0 0]; [7 7]; [30 20]; [14 40]];
 
-%PNN für D1 und D2
+%PNN fï¿½r D1 und D2
 for m=1:numel(M)/2
     x = M(m,:);
     w_1 = 0;    
@@ -36,7 +36,7 @@ for m=1:numel(M)/2
        w_2 = w_2 + value_node_i;
     end
     
-    %Keine Skalierung von w_1/w_2 nötig, da priori Wahrscheinlichkeit
+    %Keine Skalierung von w_1/w_2 nï¿½tig, da priori Wahrscheinlichkeit
     %gleich
     
     if w_1 > w_2
